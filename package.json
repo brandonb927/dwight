@@ -1,0 +1,26 @@
+{
+  "name": "dwight",
+  "version": "1.0.0",
+  "description": "Dwight Schrute, Assistant To The Regional Manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonb927/dwight.git"
+  },
+  "keywords": [
+    "bears",
+    "bear attacks"
+  ],
+  "author": "Brandon Brown <dwight@brandonb.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonb927/dwight/issues"
+  },
+  "homepage": "https://github.com/brandonb927/dwight#readme",
+  "devDependencies": {
+    "multiline": "^1.0.2"
+  }
+}
