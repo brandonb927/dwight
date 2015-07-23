@@ -1,6 +1,6 @@
 {
   "name": "dwight",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dwight Schrute, Assistant To The Regional Manager",
   "main": "index.js",
   "bin": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/brandonb927/dwight/issues"
   },
   "homepage": "https://github.com/brandonb927/dwight#readme",
-  "devDependencies": {
+  "dependencies": {
     "multiline": "^1.0.2"
   }
 }
