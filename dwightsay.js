@@ -2,7 +2,7 @@ var multiline = require('multiline')
 var stdin = require('get-stdin')
 
 var generatePhrase = function (input) {
-  var maxLength = 63
+  var maxLength = 63 // painstakingly retrieved by counting the speech bubble space removed
   var output = ''
 
   // Loop through the characters in the incoming string
