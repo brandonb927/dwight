@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 var multiline = require('multiline')
 
-module.exports = console.log(multiline(function(){/*
+module.exports = console.log(multiline(function () {/*
                                  `/+o/.
                              .+sso+/:oydyo/:-:+shdys/    `-:.     `-/+o+/`
                          `/sdh+/::/::ss:`ymdhyso//hmMNyhNNms+ososys+/-:/shms/`
@@ -63,4 +65,4 @@ module.exports = console.log(multiline(function(){/*
                                             `...------..-.........``
                                                 ``..-.--........``
                                                      ```..```
-*/}));
+*/}))

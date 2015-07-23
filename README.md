@@ -15,3 +15,9 @@ var dwight  = require('dwight')
 
 dwight()
 ```
+
+He can also be reached by calling him on the command line
+
+```
+$ dwight
+```

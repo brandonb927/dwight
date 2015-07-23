@@ -1,8 +1,11 @@
 {
   "name": "dwight",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dwight Schrute, Assistant To The Regional Manager",
   "main": "index.js",
+  "bin": {
+    "dwight": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
