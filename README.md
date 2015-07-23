@@ -8,16 +8,23 @@ You can bring Dwight Schrute, Assistant To The Regional Manager, Beet Farmer, Be
 npm install --save-dev dwight
 ```
 
-then call upon him with
+then call upon him in a module with
 
 ```
-var dwight  = require('dwight')
+var schrute  = require('dwight')
 
-dwight()
+schrute.dwight()
+schrute.dwightsay("Nothing stresses me out. Except having to seek the approval of my inferiors.")
 ```
 
 He can also be reached by calling him on the command line
 
 ```
 $ dwight
+```
+
+Dwight can also say things by piping words into his mouth
+
+```
+$ echo "You couldn’t handle my undivided attention." | dwightsay
 ```

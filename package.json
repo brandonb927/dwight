@@ -1,13 +1,11 @@
 {
   "name": "dwight",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Dwight Schrute, Assistant To The Regional Manager",
   "main": "index.js",
   "bin": {
-    "dwight": "index.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dwight": "dwight-cli.js",
+    "dwightsay": "dwightsay-cli.js"
   },
   "repository": {
     "type": "git",
@@ -15,15 +13,17 @@
   },
   "keywords": [
     "bears",
-    "bear attacks"
+    "bear attacks",
+    "beets"
   ],
   "author": "Brandon Brown <dwight@brandonb.io>",
-  "license": "MIT",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/brandonb927/dwight/issues"
   },
   "homepage": "https://github.com/brandonb927/dwight#readme",
   "dependencies": {
+    "get-stdin": "^4.0.1",
     "multiline": "^1.0.2"
   }
 }
