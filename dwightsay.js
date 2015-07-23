@@ -1,6 +1,32 @@
 var multiline = require('multiline')
 var stdin = require('get-stdin')
 
+var generatePhrase = function (input) {
+  var maxLength = 63
+  var output = ''
+
+  // Loop through the characters in the incoming string
+  for (var i in input) {
+    // If the current character is less than the max length
+    if (i < maxLength) {
+      // append the character to the output string
+      output += input[i]
+    } else if (i >= maxLength) {
+      output += ''
+    } else {
+      // at the end, quit the loop
+      break
+    }
+  }
+
+  while (output.length < maxLength) {
+    // right-pad the string with spaces now to fill the gap
+    output = output + ' '
+  }
+
+  return output
+}
+
 var dwightSay = function (text) {
   console.log(multiline(function () {/*
                                `/+o/.
@@ -70,36 +96,14 @@ var dwightSay = function (text) {
 
 module.exports = function (text) {
   if (typeof text !== 'undefined' && text !== null) {
-    return dwightSay(text)
+    var stuff = generatePhrase(text)
+    return dwightSay(stuff)
   } else {
     stdin(function (text) {
-
-      var maxLength = 63
-      var outputString = ''
-
       // replace stdin new line
       text = text.replace('\n', '')
-
-      // Loop through the characters in the incoming string
-      for (var i in text) {
-        // If the current character is less than the max length
-        if (i < maxLength) {
-          // append the character to the output string
-          outputString += text[i]
-        } else if (i >= maxLength) {
-          outputString += ''
-        } else {
-          // at the end, quit the loop
-          break
-        }
-      }
-
-      while (outputString.length < maxLength) {
-        // right-pad the string with spaces now to fill the gap
-        outputString = outputString + ' '
-      }
-
-      return dwightSay(outputString)
+      var stuff = generatePhrase(text)
+      return dwightSay(stuff)
     })
   }
 
